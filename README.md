@@ -2,17 +2,20 @@ Please feel free to contact me if you have any questions or concerns.
 
 Methods overview:
 
-These files contain a computer simulation model. 
-It's a decision analytic model and its core is a probabilistic model that calculates the standard outputs of a modern cost-effectiveness analysis. The scripts itself mention some research papers on the methods that we used. 
+These files contain a two-part computer simulation model.
+It's a decision analytic model and its core is a probabilistic model. This calculates the standard outputs of a modern cost-effectiveness analysis (part 1). It also aims to estimate the value of running a trial comparing two different technologies (part 2). The scripts itself mention research papers on the methods that are used. The core model is a state transition model. 
 
-Further it also simulates a trial and also patient pathways after entering the hospital and after discharge at home.   
-The analysis is designed to estimate the gross monetary value of a clinical trial as well as costs and benefits per patient.  This part that is estimating the gross trial value needs further work before being reliable enough to use as help in making real-life decisions.
+The second part simulates using one technology alongside a trial of new and current technologies. 
+The analysis is designed to estimate the gross monetary value of a clinical trial and costs and benefits per patient. This analysis includes technology life time, sample size, and other variables. The second part needs further work before being reliable enough to use as help in making real-life decisions.
 
 
-Notes on running of these R software scripts:
+Notes on running the R software scripts:
 
 The script '1_master.R' has the base case model in it and needs to be run first. 
-Then comes the script '2_compute_enpvsi.R', which has the ENPVSI model in it. 
+Then comes the script '2_compute_enpvsi.R', which has the trial simulation model in it. 
 All other scripts are called from within those two initial scripts. 
 
-If needed, the additional script 'save_other_e_results.R' saves other results of the ENPVSI model as files.
+If needed, the additional script 'save_other_e_results.R' saves other results of the trial model as files.
+
+I tried to comment the code as good as possible. 
+Again, please feel free to contact me if you have any questions or concerns.
