@@ -6,7 +6,7 @@ These files contain a computer simulation model.
 It's a decision analytic model and its core is a probabilistic model that calculates the standard outputs of a modern cost-effectiveness analysis. The scripts itself mention some research papers on the methods that we used. 
 
 Further it also simulates a trial and also patient pathways after entering the hospital and after discharge at home.   
-The analysis is designed to estimate the gross monetary value of a clinical trial as well as costs and benefits per patient.  This part that is estimating the gross trial value needs further work before being reliable enough to use as help in makind funding decisions.
+The analysis is designed to estimate the gross monetary value of a clinical trial as well as costs and benefits per patient.  This part that is estimating the gross trial value needs further work before being reliable enough to use as help in making real-life decisions.
 
 
 Notes on running of these R software scripts:
